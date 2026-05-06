@@ -1,0 +1,122 @@
+/* 1. CONFIGURAZIONE GENERALE */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+/* Applichiamo il font di Google Fonts */
+font-family: 'Playwrite CU Guides', cursive;
+background-color: #F3C677; /* Sfondo neutro */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 20px 20px;
+  
+}
+/* 2. STILE INTESTAZIONE */
+.profile-img {
+width: 110px;
+height: 110px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid white;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1 {
+margin: 15px 0 5px;
+font-size: 22px;
+color: #B33F62;
+}
+P {
+margin: 0px 3px;
+font-size: 16px;
+color: #B33F62;
+}
+/* 3. IL CONTENITORE DEI BOTTONI */
+.container {
+width: 100%;
+max-width: 420px; /* Larghezza ottimale smartphone */
+margin-top: 30px;
+}
+.btn {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #FAECCE;
+color: #B33F62;
+text-decoration: none; /* Rimuove sottolineatura */
+padding: 18px;
+margin-bottom: 12px;
+
+border-radius: 16px; /* Angoli arrotondati */
+font-weight: 500;
+transition: all 0.3s ease; /* Animazione fluida */
+box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.btn i {
+margin-right: 12px; /* Spazio tra icona e testo */
+font-size: 1.3rem;
+}
+/* 4. EFFETTO HOVER: L'anima del sito */
+.btn:hover {
+background-color: #B33F62; /* Cambia colore al passaggio mouse */
+color: #f4e4ba;
+transform: translateY(-3px); /* Si solleva leggermente */
+box-shadow: 0 6px 15px rgba(224, 171, 211, 0.5);
+}
+/* Quando il body ha la classe .dark-mode, cambiano i colori */
+ body.dark-mode {
+ background-color: #011526; /* Colore sfondo scuro */
+ color: #ffffff; /* Testo bianco */
+ }
+
+ /* Modifica anche i tuoi bottoni .btn quando sono in Dark Mode */
+ body.dark-mode .btn {
+ background-color: #025959;
+ color: #fff;
+ border: 1px solid #555;
+}
+body.dark-mode h1 {
+  color: #76c893; /* oppure il colore che vuoi */
+}
+body.dark-mode p {
+  color: #76c893; /* oppure il colore che vuoi */
+}
+.theme-switch {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* lo sposta a destra */
+  margin-bottom: 10px;
+  margin-right: 850px;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #76c893;
+  color: #011526;
+}
+
+#theme-toggle {
+  background: linear-gradient(135deg, #038C65, #5d1847);
+  color: #f4e4ba;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#theme-toggle:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+/*https://coolors.co/palette/0c0a3e-7b1e7a-b33f62-f9564f-f3c677
+https://color.hailpixel.com/#F4E4BA
+*/
