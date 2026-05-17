@@ -10,3 +10,8 @@ corpo.classList.toggle('dark-mode');
  }
 
  });
+$(document).ready(function() {
+
+$("table").hide().fadeIn(2000);
+
+});
