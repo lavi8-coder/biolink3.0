@@ -1,3 +1,4 @@
+
 /* 1. CONFIGURAZIONE GENERALE */
 * {
 margin: 0;
@@ -12,7 +13,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 padding: 20px 20px;
-  
+ 
 }
 /* 2. STILE INTESTAZIONE */
 .profile-img {
@@ -67,7 +68,7 @@ box-shadow: 0 6px 15px rgba(224, 171, 211, 0.5);
 }
 /* Quando il body ha la classe .dark-mode, cambiano i colori */
  body.dark-mode {
- background-color: #011526; /* Colore sfondo scuro */
+ background-color: #0C283D; /* Colore sfondo scuro */
  color: #ffffff; /* Testo bianco */
  }
 
@@ -93,10 +94,10 @@ body.dark-mode p {
 
 body.dark-mode .btn:hover {
   background-color: #76c893;
-  color: #011526;
+  color: #0C283D;
 }
 
-#theme-toggle {
+#theme-toggle { /* bottone dark mode*/
   background: linear-gradient(135deg, #038C65, #5d1847);
   color: #f4e4ba;
   border: none;
@@ -117,6 +118,54 @@ body.dark-mode .btn:hover {
   transform: translateY(-2px) scale(1.05);
   box-shadow: 0 6px 15px rgba(0,0,0,0.25);
 }
+.submit-btn { /*bottone invia*/
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 12px;
+  background: #B33F62;
+  color: #FAECCE;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.schedule-table { /*tabella orari*/
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.schedule-table td { /*tabella orari*/
+  background-color: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact-form input, /* dove potermi contattare */
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FAECCE;
+  color: #000000;
+}
+
+.submit-btn:hover { /* bottone invia fluttua */
+background-color: #FAECCE; /* Cambia colore al passaggio mouse */
+color: #B33F62;
+transform: translateY(-3px); /* Si solleva leggermente */
+box-shadow: 0 6px 15px rgba(224, 171, 211, 0.5);
+}
+
+body.dark-mode #contact-form button { /*bottone invia dark mode*/
+  background-color: #025959;
+  color: white;
+}
+
 /*https://coolors.co/palette/0c0a3e-7b1e7a-b33f62-f9564f-f3c677
 https://color.hailpixel.com/#F4E4BA
 */
